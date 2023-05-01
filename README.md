@@ -1,8 +1,6 @@
 # simplechat
 
 
-
-
 ## prerequisites
 
 ### How to install mosquitto
@@ -48,4 +46,11 @@ update `/etc/nginx/sites-available/default`
                 proxy_set_header Upgrade $http_upgrade;
                 proxy_set_header Connection "upgrade";
         }
+```
+
+## How to build and run
+```
+npm i
+npm run build
+npm run start
 ```
