@@ -31,7 +31,7 @@ sudo make install
 
 ### How to setup nginx for https
 ```
-sudo certbot --nginx -d dev.gurumlab.com
+sudo certbot --nginx -d <YOUR-DOMAIN>
 ```
 
 update `/etc/nginx/sites-available/default`
