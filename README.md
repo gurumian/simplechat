@@ -54,3 +54,46 @@ npm i
 npm run build
 npm run start
 ```
+
+
+
+
+
+
+## On m1 macOS
+
+- In Host
+```
+multipass launch -c8 -m8G -d40G -nbuilder
+multipass exec builder -- sudo lxd init --auto
+multipass mount $HOME/workspace/simplechat builder:/home/ubuntu/workspace/simplechat
+```
+
+Open a multipass shell.
+
+```
+npm run build
+```
+
+- In multipass inside
+```
+snapcraft --use-lxd
+```
+
+
+
+## snap package
+```
+snapcraft
+```
+
+## install the snap package 
+```
+sudo snap install --devmode --dangerous dronepad_0.1_amd64.snap
+sudo snap start dronepad
+```
+
+## To stop the service,
+```
+snap stop --disable dronepad
+```
